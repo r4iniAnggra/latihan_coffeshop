@@ -1,0 +1,213 @@
+/* awal header */
+:root {
+  --colorprimary: #bc9667;
+  --colorsecondary: #edeae3;
+  --text-color: #1b1b1b;
+  --bg-color: #fff;
+  --button-color: #8a6f4d;
+}
+
+.header {
+  display: flex; /*supaya teksnya kesamping kalo misal ada gambar dibawahnya jadi tulisannnya bisa kesamping */
+  justify-content: space-between; /*supaya teksnya terbagi menjadi 3 bagian ada space tiap tabel kalau kita ibaratkan tabel */
+  align-items: center;
+  /* mengaturteksketengah */
+  background-color: black;
+  padding: 10px 50px; /* supaya tabel atas bawah kanan kiri */
+}
+.header-brand img {
+  width: 50px; /* mengatur ukuran gambar logo */
+  /* padding: 20px; warna teks tulisan */
+  /* color: white;warna teks tulisan */
+}
+.header-menu a {
+  color: white; /*warna teks tulisan */
+  text-decoration: none; /*menghilang garis bawah text */
+}
+.header-icon a {
+  color: white;
+}
+/* akhir header */
+
+/* awal hero */
+.hero {
+  display: flex;
+  align-items: center; /*kalau pake ini harus pake display flex dulu atas bawah */
+  /* padding: 20px; jarak didalam kotak */
+  padding: 0px 40px; /*jarak tabel atas bawah kanan kiri */
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: space-between; /* kanan kiri supaya ada space tiap tabel ada jarak .kalau pake ini harus pake display flex dulu */
+}
+.hero-desc {
+  width: 50%; /* ukuran tabel teksnya supaya gak melebar kemana mana kita ibaratkan sebagai wadah teksnya  */
+}
+.hero-img img {
+  width: 300px; /* ukuran gambar latar belakangnya penggen berapa */
+}
+.hero-button button {
+  background-color: orange; /* warna tabel ditombol shop now */
+  color: white; /* warna teks yang ada ditombol */
+  border: none; /* menghilangkan garis hitam dibawah teks pada teks didalam tabel */
+  border-radius: 10px; /* supaya gambarnya tuh tumpul diujungnya */
+  /* menghilangkan garis bawah yang ada diteks */
+  padding: 10px 20px; /*jarak tabel atas bawah kanan kiri */
+  cursor: pointer;
+  font-size: 16px; /* untuk ukuran teks yang ada didalam tabel */
+}
+
+.hero-button button:hover {
+  background-color: darkorange;
+}
+/* akhir hero */
+
+/* awal about */
+.about {
+  display: flex; /*supaya teksnya kesamping */
+  gap: 20px; /* supaya ada jarak diteksnya gak dempet sama gambar */
+  justify-content: center; /*  membuat tabel (gambar/teks ketengah) */
+  margin-top: 20px;
+  /* margin itu buat ngatur jarak diluar kotak */
+}
+
+.about-img img {
+  width: 500px;
+  border-radius: 10px; /* supaya gambarnya tuh tumpul diujungnya */
+}
+.about-desc {
+  width: 50%; /* ukuran tabel teksnya supaya gak melebar kemana mana kita ibaratkan sebagai wadah teksnya  */
+}
+.about-button button {
+  /*  kenapa buttonnya 2x karena kalo satu kali warnanya bakal melebar manggil button lagi supaya warnanya ada wadahnya  */
+  background-color: orange; /* warna tabel ditombol shop now */
+  color: white; /* warna teks yang ada ditombol */
+  border-radius: 10px; /* supaya gambarnya tuh tumpul diujungnya */
+  border: none; /* menghilangkan garis hitam dibawah teks pada teks didalam tabel */
+  padding: 10px 20px; /* supaya tabel atas bawah kanan kiri */
+  font-size: 16px; /* untuk ukuran teks yang ada didalam tabel */
+}
+/* akhir about */
+
+/* awal product */
+.product-card {
+  /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+  /* box-shadow: 0 25px 35px rgba(0, 0, 0, 0.8), 0 10px 20px rgba(0, 0, 0, 0.07); */
+  /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(0, 0, 0, 0.04); */
+  /* box-shadow: 0 25px 35px rgba(0, 0, 0, 0.8), 0 10px 20px rgba(0, 0, 0, 0.07); */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+  text-align: start;
+  width: 300px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
+}
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card-img {
+  border-radius: 12px;
+  background-color: var(--colorsecondary);
+  height: 300px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 10px;
+}
+.product-card img {
+  width: 100%;
+}
+.product-card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card-price button {
+  padding: 8px;
+  margin-top: 8px;
+  border: 0cqmax;
+  border-radius: 8px;
+  color: black;
+  background-color: #bc9667;
+}
+.product-title {
+  text-align: center;
+}
+/* akhir product */
+
+/* awal customer */
+.customer {
+  padding: 20px;
+  text-align: center;
+}
+
+.customer-title h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.customer-container {
+  display: flex; /* supaya tabelnya gak kebawah tapi kesamping */
+  justify-content: center; /* membuat posisi tabel ditengah semua */
+  gap: 20px; /* mengatur jarak antar tabel */
+}
+
+.customer-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); */
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15); */
+  /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(0, 0, 0, 0.04); */
+  /* box-shadow: 0 25px 35px rgba(0, 0, 0, 0.8), 0 10px 20px rgba(0, 0, 0, 0.07); */
+}
+
+.star {
+  margin-bottom: 10px;
+  width: 104%;
+}
+
+.customer-card .author img {
+  width: 60px;
+  height: 65px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+/* akhir customer */
+
+/* awal footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.footer .footer-col {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer .footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-col p {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+}
+.footer .footer-col img {
+  display: flex;
+}
